@@ -16,6 +16,7 @@
 		6FE808991F8D30E200A635E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FE808971F8D30E200A635E2 /* LaunchScreen.storyboard */; };
 		6FE808A41F8D30E200A635E2 /* Twiter_ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE808A31F8D30E200A635E2 /* Twiter_ClientTests.swift */; };
 		6FE808AF1F8D30E200A635E2 /* Twiter_ClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE808AE1F8D30E200A635E2 /* Twiter_ClientUITests.swift */; };
+		6FE808BD1F8E11F700A635E2 /* dist.config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FE808BC1F8E11F700A635E2 /* dist.config.plist */; };
 		A7CD6103DE83638E1259D8EE /* Pods_Twiter_ClientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7272136D5702B72DD75D7BED /* Pods_Twiter_ClientUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		6FE808AA1F8D30E200A635E2 /* Twiter-ClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Twiter-ClientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FE808AE1F8D30E200A635E2 /* Twiter_ClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twiter_ClientUITests.swift; sourceTree = "<group>"; };
 		6FE808B01F8D30E200A635E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FE808BC1F8E11F700A635E2 /* dist.config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dist.config.plist; sourceTree = "<group>"; };
 		7272136D5702B72DD75D7BED /* Pods_Twiter_ClientUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twiter_ClientUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85CF6B2B91F14F60AA48F72D /* Pods-Twiter-ClientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twiter-ClientUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Twiter-ClientUITests/Pods-Twiter-ClientUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9B30F72BB08711C6DEB1A8D4 /* Pods-Twiter-Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twiter-Client.release.xcconfig"; path = "Pods/Target Support Files/Pods-Twiter-Client/Pods-Twiter-Client.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				6FE808951F8D30E200A635E2 /* Assets.xcassets */,
 				6FE808971F8D30E200A635E2 /* LaunchScreen.storyboard */,
 				6FE8089A1F8D30E200A635E2 /* Info.plist */,
+				6FE808BC1F8E11F700A635E2 /* dist.config.plist */,
 			);
 			path = "Twiter-Client";
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				6FE808991F8D30E200A635E2 /* LaunchScreen.storyboard in Resources */,
 				6FE808961F8D30E200A635E2 /* Assets.xcassets in Resources */,
 				6FE808941F8D30E200A635E2 /* Main.storyboard in Resources */,
+				6FE808BD1F8E11F700A635E2 /* dist.config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,6 +726,7 @@
 				6FE808B51F8D30E200A635E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6FE808B61F8D30E200A635E2 /* Build configuration list for PBXNativeTarget "Twiter-ClientTests" */ = {
 			isa = XCConfigurationList;
@@ -730,6 +735,7 @@
 				6FE808B81F8D30E200A635E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6FE808B91F8D30E200A635E2 /* Build configuration list for PBXNativeTarget "Twiter-ClientUITests" */ = {
 			isa = XCConfigurationList;
@@ -738,6 +744,7 @@
 				6FE808BB1F8D30E200A635E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

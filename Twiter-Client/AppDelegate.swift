@@ -7,15 +7,32 @@
 //
 
 import UIKit
+import TwitterKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var config: Dictionary<String, Any>!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        if let path = Bundle.main.path(forResource: "config", ofType: "plist") {
+            config = NSDictionary(contentsOfFile: path) as? [String: Any]
+        }
+        else {
+            debugPrint("Cannot find `config.plist` file")
+            exit(1)
+        }
+        
+        if let consumerKey = config["consumerKey"] as? String,
+            let consumerSecret = config["consumerSecret"] as? String {
+            Twitter.sharedInstance().start(withConsumerKey: consumerKey, consumerSecret: consumerSecret)
+        }
+        else {
+            debugPrint("Cannot find consumerKey or consumerSecret in config.plist")
+        }
+        
         return true
     }
 
